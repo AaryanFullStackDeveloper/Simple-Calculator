@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+ 
+  </head>
+
+  <body>
+    
+        <div class="container">
+      <form name="myForm" id="myForm">
+
+            <input type="text" id="screen" name="screen" value="" >
+            <input class="buttonIn" type="button" name="7" value="  C  " onclick="backspace()">
+              
+            <br/>
+            <div class="row">
+             <input class="buttonIn" type="button" name="7" value="(" onclick="inputIntake('(')">
+              <input class="buttonIn" type="button" name="7" value=")" onclick="inputIntake(')')">
+            <input class="buttonIn" type="button" name="7" value="  7  " onclick="inputIntake(7)" >
+            <input class="buttonIn" type="button" name="8" value="  8  " onclick="inputIntake(8)">
+            <input class="buttonIn" type="button" name="9" value="  9  " onclick="inputIntake(9)">
+            <input class="buttonIn" type="button" name="+" value="+" onclick="inputIntake('+')">
+        </div>
+            <br>
+            <div class="row">
+            <input class="buttonIn" type="button" name="4" value="  4  " onclick="inputIntake(4)">
+            <input class="buttonIn" type="button" name="5" value="  5  " onclick="inputIntake(5)">
+            <input class="buttonIn" type="button" name="6" value="  6  " onclick="inputIntake(6)">
+            <input class="buttonIn" type="button" name="-" value="-" onclick="inputIntake('-')">
+        </div>
+            <br>
+            <div class="row">
+            <input class="buttonIn" type="button" name="1" value="  1  " onclick="inputIntake(1)">
+            <input class="buttonIn" type="button" name="2" value="  2  " onclick="inputIntake(2)">
+            <input class="buttonIn" type="button" name="3" value="  3  " onclick="inputIntake(3)">
+            <input class="buttonIn" type="button" name="*" value="x" onclick="inputIntake('*')">
+        </div>
+            <br>
+            <div class="row">
+            <input class="buttonIn" type="button" name="c" value="AC" onclick="clear()">
+            <input class="buttonIn" type="button" name="0" value="  0  " onclick="inputIntake(0)">
+            <input class="buttonIn" type="button" name="=" value="=" onclick="result()">
+            <input class="buttonIn" type="button" name="/" value="/" onclick="inputIntake('/')">
+        </div>
+</form>
+</div>
+
+      <script src="script.js"></script>
+  </body>
+
+</html>
